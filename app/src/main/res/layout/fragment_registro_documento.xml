@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/mm"
+    android:gravity="center"
+    android:padding="@dimen/padding_horizontal_L"
+    tools:context="com.jkvillavo12dev.lcpestournaments.fragments.registro.RegistroDocumentoFragment">
+
+    <TextView
+        android:id="@+id/registroDocumento_textView"
+        style="@style/mw"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="@dimen/margin_vertical_L"
+        android:text="@string/registroDocumento"
+        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+    <TextView
+        android:id="@+id/registroDocumento_textViewTipoDoc"
+        style="@style/mw"
+        android:layout_below="@id/registroDocumento_textView"
+        android:layout_marginBottom="@dimen/margin_vertical_XS"
+        android:text="@string/registroDocumentoTipo" />
+
+    <Spinner
+        android:id="@+id/registroDocumento_spinnerTipoDoc"
+        style="@style/mw"
+        android:layout_height="@dimen/viewHeihght_normal"
+        android:layout_below="@+id/registroDocumento_textViewTipoDoc"
+        android:entries="@array/tipoDocumento" />
+
+    <TextView
+        android:id="@+id/registroDocumento_textViewTipoDocError"
+        style="@style/mw"
+        android:layout_below="@id/registroDocumento_spinnerTipoDoc"
+        android:layout_marginBottom="@dimen/margin_vertical_S"
+        android:layout_marginTop="@dimen/margin_vertical_XS"
+        android:gravity="right"
+        android:text="Error"
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/redPrimary_dark"
+        android:visibility="gone" />
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/registroDocumento_textInputLayoutDocumento"
+        style="@style/mw"
+        android:layout_below="@id/registroDocumento_textViewTipoDocError">
+
+        <EditText
+            android:id="@+id/registroDocumento_editTextDocumento"
+            style="@style/mw"
+            android:hint="@string/registroDocumentoNum"
+            android:inputType="number"
+            android:maxLength="50"
+            android:maxLines="1" />
+    </android.support.design.widget.TextInputLayout>
+
+
+</RelativeLayout>

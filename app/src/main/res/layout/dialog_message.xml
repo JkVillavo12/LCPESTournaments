@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/mm">
+
+    <TextView
+        android:id="@+id/dialogFragmentConfirmation_textViewTitulo"
+        style="@style/TextView.dialogTitle"
+        android:text="Titulo" />
+
+    <TextView
+        android:id="@+id/dialogFragmentConfirmation_textViewTexto"
+        style="@style/TextView.dialogText"
+        android:layout_below="@+id/dialogFragmentConfirmation_textViewTitulo"
+        android:text="@string/lorem_30" />
+
+    <LinearLayout
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/dialogFragmentConfirmation_textViewTexto"
+        android:gravity="right"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/dialogFragmentConfirmation_buttonAceptar"
+            style="@style/Button.dialog"
+            android:text="@string/common_aceptar" />
+    </LinearLayout>
+
+
+</RelativeLayout>

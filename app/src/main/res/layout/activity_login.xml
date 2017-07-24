@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/primary"
+    tools:context="com.jkvillavo12dev.lcpestournaments.LoginActivity">
+
+    <RelativeLayout style="@style/mm">
+
+        <ImageView
+            android:id="@+id/login_imageViewBackground"
+            style="@style/mm"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:id="@+id/login_linearLayoutBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_vertical_S"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ww"
+                android:text="@string/login_noCuenta"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorWhiteSecondary" />
+
+            <Button
+                style="@style/ww"
+                android:background="@null"
+                android:onClick="registro"
+                android:text="@string/login_noCuentaRegistrate"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/colorWhitePrimary" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/login_linearLayoutTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="@dimen/margin_vertical_S"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ww"
+                android:text="@string/login_entraComo"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textColor="@color/colorWhiteSecondary" />
+
+            <Button
+                style="@style/ww"
+                android:background="@null"
+                android:onClick="ingresarComoInvitado"
+                android:text="@string/common_invitado"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textColor="@color/colorWhitePrimary" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/login_imageViewIcono"
+            style="@style/ww"
+            android:layout_below="@+id/login_linearLayoutTop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_vertical_M"
+            app:srcCompat="@drawable/ic_lcpes_96dp" />
+
+        <RelativeLayout
+            android:id="@+id/login_relativeLayoutCenter"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/login_linearLayoutBottom"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/login_imageViewIcono"
+            android:layout_marginBottom="@dimen/margin_vertical_M"
+            android:layout_toStartOf="@+id/login_linearLayoutTop">
+
+            <LinearLayout
+                android:id="@+id/login_linearLayoutCentral"
+                style="@style/mw.vert"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_horizontal_L"
+                android:layout_marginRight="@dimen/margin_horizontal_L">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/login_textInputLayoutCorreo"
+                    style="@style/textInputOverIndigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/login_editTextCorreo"
+                        style="@style/mw"
+                        android:backgroundTint="@color/colorWhitePrimary"
+                        android:hint="@string/login_correoElectronico"
+                        android:inputType="textEmailAddress"
+                        android:maxLength="@integer/maxLenghtName"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhitePrimary" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/login_textInputLayoutPassword"
+                    style="@style/textInputOverIndigo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:passwordToggleEnabled="true"
+                    app:passwordToggleTint="@color/colorWhitePrimary">
+
+                    <EditText
+                        android:id="@+id/login_editTextPassword"
+                        style="@style/mw"
+                        android:backgroundTint="@color/colorWhitePrimary"
+                        android:hint="@string/login_password"
+                        android:inputType="textPassword"
+                        android:maxLength="@integer/maxLenghtName"
+                        android:maxLines="1"
+                        android:textColor="@color/colorWhitePrimary" />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:id="@+id/login_linearLayoutOlvidoPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/ww"
+                        android:text="@string/login_olvidastePassword"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                        android:textColor="@color/colorWhiteSecondary" />
+
+                    <Button
+                        style="@style/ww"
+                        android:background="@null"
+                        android:onClick="restaurarPassword"
+                        android:text="@string/login_olvidastePasswordRecuperar"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                        android:textColor="@color/colorWhitePrimary" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                style="@style/ww"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal">
+
+                <Button
+                    style="@style/ww"
+                    android:background="@drawable/selector_accent"
+                    android:onClick="loguearse"
+                    android:text="@string/login_ingresar"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                    android:textColor="@color/colorWhitePrimary" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>

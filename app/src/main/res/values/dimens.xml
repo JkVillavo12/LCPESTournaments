@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_horizontal_XS">4dp</dimen>
+    <dimen name="margin_horizontal_S">8dp</dimen>
+    <dimen name="margin_horizontal_M">16dp</dimen>
+    <dimen name="margin_horizontal_L">32dp</dimen>
+    <dimen name="margin_horizontal_XL">48dp</dimen>
+
+    <dimen name="margin_vertical_XS">4dp</dimen>
+    <dimen name="margin_vertical_S">8dp</dimen>
+    <dimen name="margin_vertical_M">16dp</dimen>
+    <dimen name="margin_vertical_L">32dp</dimen>
+    <dimen name="margin_vertical_XL">48dp</dimen>
+
+    <dimen name="padding_horizontal_XS">4dp</dimen>
+    <dimen name="padding_horizontal_S">8dp</dimen>
+    <dimen name="padding_horizontal_M">16dp</dimen>
+    <dimen name="padding_horizontal_L">32dp</dimen>
+    <dimen name="padding_horizontal_XL">48dp</dimen>
+
+    <dimen name="padding_vertical_XS">4dp</dimen>
+    <dimen name="padding_vertical_S">8dp</dimen>
+    <dimen name="padding_vertical_M">16dp</dimen>
+    <dimen name="padding_vertical_L">32dp</dimen>
+    <dimen name="padding_vertical_XL">48dp</dimen>
+
+    <dimen name="radiusXS">1dp</dimen>
+    <dimen name="radiusS">2dp</dimen>
+    <dimen name="radiusM">4dp</dimen>
+    <dimen name="radiusL">8dp</dimen>
+    <dimen name="radiusXL">16dp</dimen>
+
+    <dimen name="lineHeight_XS">1dp</dimen>
+    <dimen name="lineHeight_S">2dp</dimen>
+    <dimen name="lineHeight_M">4dp</dimen>
+    <dimen name="lineHeight_L">8dp</dimen>
+    <dimen name="lineHeight_XL">16dp</dimen>
+
+    <dimen name="elevation_XS">1dp</dimen>
+    <dimen name="elevation_S">2dp</dimen>
+    <dimen name="elevation_M">4dp</dimen>
+    <dimen name="elevation_L">8dp</dimen>
+    <dimen name="elevation_XL">16dp</dimen>
+
+    <dimen name="viewHeihght_normal">48dp</dimen>
+    <dimen name="viewHeihght_normalx1_5">72dp</dimen>
+    <dimen name="viewHeihght_normalx2">96dp</dimen>
+    <dimen name="viewHeihght_normalx3">144dp</dimen>
+
+    <dimen name="dialogTitle_marginVertical">24dp</dimen>
+    <dimen name="dialogTitle_marginHorizontal">24dp</dimen>
+    <dimen name="dialogTitle_separation">20dp</dimen>
+    <dimen name="dialogText_marginVertical">24dp</dimen>
+    <dimen name="dialogButtons_height">52dp</dimen>
+    <dimen name="dialogButtons_marginVertical">8dp</dimen>
+    <dimen name="dialogButtons_separationHorizontal">8dp</dimen>
+
+    <!--para dialogos-->
+    <dimen name="dialog_marginLeft">24dp</dimen>
+    <dimen name="dialog_marginRight">24dp</dimen>
+    <dimen name="dialog_marginTop">24dp</dimen>
+    <dimen name="dialog_marginBottom">24dp</dimen>
+    <dimen name="dialog_spaceTitleText">20dp</dimen>
+    <dimen name="dialog_marginButtons">8dp</dimen>
+    <dimen name="dialog_buttonHeight">36dp</dimen>
+    <dimen name="dialog_buttonZoneHeight">8dp</dimen>
+
+    <dimen name="navBootom_heightLayout">56dp</dimen>
+    <dimen name="navBootom_paddingBottom">10dp</dimen>
+    <dimen name="navBootom_paddingTop">6dp</dimen>
+
+    <dimen name="cardView_marginVertical_title">24dp</dimen>
+    <dimen name="cardView_marginVertical_titleBottom">12dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="nav_header_vertical_spacing">16dp</dimen>
+    <dimen name="nav_header_height">160dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+
+</resources>

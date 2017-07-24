@@ -1,0 +1,114 @@
+<resources>
+    <string name="app_name">LCPES Torneos</string>
+
+    <!--COMUNES-->
+    <string name="common_Si">Si</string>
+    <string name="common_No">No</string>
+    <string name="common_aceptar">Aceptar</string>
+    <string name="common_lcpes">LCPES</string>
+    <string name="common_lcpesCompleto">Liga Colombiana de PES</string>
+    <string name="common_invitado">Invitado</string>
+    <string name="common_next">Siguiente</string>
+    <string name="common_back">Anterior</string>
+    <string name="common_campoNecesario">Este campo es necesario.</string>
+
+    <!--MENSAJES-->
+    <string name="msg_campoObligatorio">Campo obligatorio</string>
+    <string name="msg_internetConsultandoInformacion">Consultando información</string>
+    <string name="msg_logginIncorrect">Usuario o contraseña invalido, verifique su información por favor.</string>
+
+    <!--MENU-->
+    <string name="menuAction_GamerTitle">Videojugador</string>
+    <string name="menuAction_TorneosCompetenciasTitle">Torneos y competencias</string>
+    <string name="menuAction_OtrasOpcionesTitle">Otras opciones</string>
+
+    <string name="menuAction_GamerMiPerfil">Mi Perfil</string>
+    <string name="menuAction_TorneosCompetencias_presencial">Torneos presenciales</string>
+    <string name="menuAction_TorneosCompetencias_online">Torneos Online</string>
+    <string name="menuAction_TorneosCompetencias_competencias">Competencias</string>
+
+    <string name="menuAction_OtrasOpcionesSobreLCPES">Sobre LCPES</string>
+    <string name="menuAction_OtrasOpcionesTerminosCondiciones">Terminos y condiciones</string>
+    <string name="menuAction_OtrasOpcionesSalirApp">Salir LCPES App</string>
+
+    <!--INTRO-->
+    <string name="intro_torneosOnlineTitulo">TORNEOS ONLINE</string>
+    <string name="intro_torneosOnline">Los mejores torneos Online de Colombia, basados en la unión, humildad y el respeto entre jugadores.</string>
+    <string name="intro_torneosPresencialesTitulo">TORNEOS PRESENCIALES</string>
+    <string name="intro_torneosPresenciales">Los mejores torneos presenciales de Colombia, juega en tu ciudad de local o viaja a enfrentarte con los
+        mejores jugadores cara a cara.
+    </string>
+    <string name="intro_retosTitulo">RETOS</string>
+    <string name="intro_retos">Los mejores retos, te crees el mejor driblando, el mejor pateando tiros libres, demuestralo en los retos.
+    </string>
+    <string name="intro_modalidadesTitulo">MODALIDADES</string>
+    <string name="intro_modalidades">Todas las modalidades dosponibles, tanto onLine como presencial, busca tus amigos y a vencer a todos los demas.
+    </string>
+
+    <!--INICIO-->
+    <string name="inicio_ingresar">Ingresar</string>
+
+    <!--LOGGIN-->
+    <string name="login_correoElectronico">Correo electrónico</string>
+    <string name="login_password">Password</string>
+    <string name="login">Login</string>
+    <string name="login_ingresar">Ingresar</string>
+    <string name="login_noCuenta">¿Aún no tienes una cuenta?</string>
+    <string name="login_noCuentaRegistrate">Registrate</string>
+    <string name="login_entraComo">Entra como</string>
+    <string name="login_olvidastePassword">¿Olvidaste tu password?</string>
+    <string name="login_olvidastePasswordRecuperar">Restauralo</string>
+
+    <!--REGISTRO-->
+    <string name="title_activity_registro">Registro</string>
+    <string name="registroNombre">Regalanos tu nombre por favor.</string>
+    <string name="registroNombres">Nombres</string>
+    <string name="registroApellidos">Apellidos</string>
+    <string name="registroCorreoTexto">Regalanos tu correo por favor, este te servirá para ingresar a la app.</string>
+    <string name="registroCorreo">Correo electrónico</string>
+    <string name="registroDocumento">Indicanos tu tipo y número de documento por favor.</string>
+    <string name="registroDocumentoTipo">Tipo documento</string>
+    <string name="registroDocumentoNum">Número de documento</string>
+    <string name="registroNickTexto">¿Usas un nick jugando a la PES? \n Indicanos tu nick.</string>
+    <string name="registroNick">Nickname</string>
+    <string name="registroPasswordText">Es necesario un password para ingresar a la app, vamos a ingresarlo.</string>
+    <string name="registroPassword">Password</string>
+    <string name="registroConfirmaPassword">Confirma password</string>
+    <string name="registroFechaNacimiento">Fecha nacimiento</string>
+    <string name="registroCiudad">Ciudad</string>
+    <string name="registroRecibirInfoTorneosOnline">¿Recibir información torneos ONLINE?</string>
+    <string name="registroRecibirInfoTorneosPresenciales">¿Recibir información torneos PRESENCIALES?</string>
+
+    <string name="registroFinish_titulo">Hemos finalizado el registro</string>
+    <string name="registroFinish_texto">¡Bienvenido! ya puedes ingresar a la app y registrarte en los distintos torneos, retos y demas competencias.</string>
+
+
+    <!-- LOREM -->
+    <string name="lorem_palabras1">Lorem</string>
+    <string name="lorem_palabras2">Lorem ipsum.</string>
+    <string name="lorem_palabras5">Lorem ipsum dolor sit amet.</string>
+    <string name="lorem_palabras15">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat, dui in pellentesque feugiat, metus.</string>
+    <string name="lorem_30">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sit amet elit sed tortor bibendum congue. Proin imperdiet quis
+        urna nec maximus. Quisque aliquam nibh et condimentum viverra. Nullam pharetra.
+    </string>
+
+    <string name="lorem_parrafo1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam quis libero sem. Sed porttitor tellus sed dolor varius hendrerit. Proin dapibus mi eu ipsum rutrum, ut viverra urna tincidunt. Mauris ac tincidunt leo. Sed ut consectetur erat. Phasellus et leo a nisl convallis convallis et non odio. Morbi quis odio eu nisi tempor convallis vel at justo. Ut sollicitudin viverra velit, at tincidunt ipsum vulputate sed. Quisque nec mi in metus consectetur malesuada.</string>
+
+    <string name="inicio_terminos">Terminos y condiciones</string>
+    <string name="loggin_registrarse">Registrarse</string>
+
+    <string name="eventos_noResultados">No se encontrarón eventos para mostrar</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+
+    <string name="tipoDocumento_cedula">Close</string>
+    <string name="tipoDocumento_TarjetaIdentidad">Close</string>
+
+    <string-array name="tipoDocumento">
+        <item>Selecciona</item>
+        <item>Cédula</item>
+        <item>Tarjeta Identidad</item>
+    </string-array>
+
+
+</resources>

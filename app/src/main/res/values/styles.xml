@@ -1,0 +1,280 @@
+<resources>
+
+    <style name="mm">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="mm.vert">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="ww">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="wm">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="mw">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="mw.hori">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="ww.hori">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="mw.vert">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="mm.marginHoriz">
+        <item name="android:layout_marginLeft">@dimen/margin_horizontal_M</item>
+        <item name="android:layout_marginRight">@dimen/margin_horizontal_M</item>
+    </style>
+
+    <style name="mm.marginAll">
+        <item name="android:layout_marginLeft">@dimen/margin_horizontal_S</item>
+        <item name="android:layout_marginRight">@dimen/margin_horizontal_S</item>
+        <item name="android:layout_marginTop">@dimen/margin_vertical_S</item>
+        <item name="android:layout_marginBottom">@dimen/margin_vertical_S</item>
+    </style>
+
+    <style name="viewLineHorizontal">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/lineHeight_XS</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+
+    <style name="ww.imageForSpinner">
+        <item name="android:layout_marginRight">@dimen/margin_horizontal_S</item>
+    </style>
+
+    <style name="mw.marginHoriz">
+        <item name="android:layout_marginLeft">@dimen/margin_horizontal_M</item>
+        <item name="android:layout_marginRight">@dimen/margin_horizontal_M</item>
+    </style>
+
+    <style name="mw.editTextDate">
+        <item name="android:drawablePadding">@dimen/padding_horizontal_S</item>
+        <item name="android:drawableLeft">@drawable/ic_event_black_24dp</item>
+        <item name="android:focusable">false</item>
+        <item name="android:inputType">text</item>
+    </style>
+
+    <style name="mw.editTextDate.delete">
+        <item name="android:drawableRight">@drawable/ic_cancel_black_24dp</item>
+    </style>
+
+    <style name="mw.textViewForSpinner">
+        <item name="android:textColor">@color/secondary_text</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textAppearance">@style/Base.TextAppearance.AppCompat.Body1</item>
+    </style>
+
+    <!--Estilo con pesos-->
+    <style name="wew">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="dialogButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:background">@null</item>
+        <item name="android:layout_marginRight">@dimen/dialogButtons_separationHorizontal</item>
+        <item name="android:layout_marginTop">@dimen/dialogButtons_marginVertical</item>
+        <item name="android:layout_marginBottom">@dimen/dialogButtons_marginVertical</item>
+        <item name="android:textColor">@color/accent</item>
+    </style>
+
+    <style name="dialogTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:textColor">@color/primary_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginBottom">@dimen/dialogTitle_separation</item>
+        <item name="android:layout_marginTop">@dimen/dialogTitle_marginVertical</item>
+        <item name="android:layout_marginLeft">@dimen/dialogTitle_marginHorizontal</item>
+        <item name="android:layout_marginRight">@dimen/dialogTitle_marginHorizontal</item>
+    </style>
+
+    <style name="mw.marginAll">
+        <item name="android:layout_marginLeft">@dimen/margin_horizontal_M</item>
+        <item name="android:layout_marginRight">@dimen/margin_horizontal_M</item>
+        <item name="android:layout_marginTop">@dimen/margin_vertical_M</item>
+        <item name="android:layout_marginBottom">@dimen/margin_vertical_M</item>
+    </style>
+
+    <style name="navBottomLineSeparator">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/lineHeight_XS</item>
+        <item name="android:background">@color/primary_dark</item>
+    </style>
+
+    <style name="navBottomLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/navBootom_heightLayout</item>
+        <item name="android:paddingBottom">@dimen/navBootom_paddingBottom</item>
+        <item name="android:paddingTop">@dimen/navBootom_paddingTop</item>
+        <item name="android:background">@color/primary</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_gravity">center_vertical</item>
+    </style>
+
+    <style name="navBottomLayoutItem">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">3</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="navBottomLayoutItemInternalRelativeLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+
+    <style name="navBottomLayoutItemInternalLinearLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="navBottomItemImage">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:tint">@android:color/white</item>
+    </style>
+
+    <style name="navBottomItemTexto">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="navBottomItemBadge">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/shape_circle_red</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Caption</item>
+        <item name="android:layout_marginLeft">@dimen/margin_horizontal_XS</item>
+    </style>
+
+    <style name="cardViewTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:layout_marginTop">@dimen/cardView_marginVertical_title</item>
+        <item name="android:layout_marginBottom">@dimen/cardView_marginVertical_titleBottom</item>
+
+    </style>
+
+    <style name="cardViewSubTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body2</item>
+        <item name="android:layout_marginBottom">@dimen/cardView_marginVertical_titleBottom</item>
+    </style>
+
+    <style name="cardViewText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+        <item name="android:layout_marginBottom">@dimen/margin_vertical_M</item>
+    </style>
+
+    <!--TextViews-->
+    <style name="TextView" parent="mw"/>
+
+    <style name="TextView.dialogTitle">
+        <item name="android:layout_marginLeft">@dimen/dialog_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/dialog_marginRight</item>
+        <item name="android:layout_marginTop">@dimen/dialog_marginTop</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_spaceTitleText</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:gravity">center_horizontal</item>
+    </style>
+
+    <style name="TextView.dialogText">
+        <item name="android:layout_marginLeft">@dimen/dialog_marginLeft</item>
+        <item name="android:layout_marginRight">@dimen/dialog_marginRight</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_marginBottom</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Body1</item>
+    </style>
+
+    <!--Buttons-->
+    <style name="Button" parent="ww"/>
+
+    <style name="Button.dialog">
+        <item name="android:layout_height">@dimen/dialog_buttonHeight</item>
+        <item name="android:layout_marginRight">@dimen/dialog_marginButtons</item>
+        <item name="android:layout_marginTop">@dimen/dialog_marginButtons</item>
+        <item name="android:layout_marginBottom">@dimen/dialog_marginButtons</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/accent</item>
+        <item name="android:background">@null</item>
+    </style>
+
+    <style name="Button.accent">
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Button</item>
+        <item name="android:textColor">@color/colorWhitePrimary</item>
+        <item name="android:background">@drawable/selector_accent</item>
+    </style>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <item name="colorAccent">@color/accent</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+    <style name="textInputOverIndigo" parent="TextAppearance.AppCompat">
+        <!-- Hint color and label color in FALSE state -->
+        <item name="android:textColorHint">@color/colorWhitePrimary</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColorSecondary">@color/colorWhiteSecondary</item>
+        <!-- Label color in TRUE state and bar color FALSE and TRUE State -->
+        <item name="colorAccent">@color/colorWhiteSecondary</item>
+        <item name="colorControlNormal">@color/colorWhitePrimary</item>
+        <item name="colorControlActivated">@color/colorWhitePrimary</item>
+    </style>
+
+    <style name="editTextOverIndigo" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">@color/colorWhiteSecondary</item>
+        <item name="colorControlActivated">@color/colorWhitePrimary</item>
+        <item name="colorControlHighlight">@color/colorWhiteSecondary</item>
+    </style>
+
+</resources>

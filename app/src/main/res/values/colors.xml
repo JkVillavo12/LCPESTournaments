@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#3F51B5</color>
+    <color name="primary_dark">#303F9F</color>
+    <color name="primary_light">#C5CAE9</color>
+    <color name="accent">#FF5722</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#757575</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#BDBDBD</color>
+
+    <color name="colorWhitePrimary">#FFFFFF</color>
+    <color name="colorWhiteSecondary">#A0FFFFFF</color>
+
+    <color name="redPrimary">#F44336</color>
+    <color name="redPrimary_dark">#D32F2F</color>
+    <color name="redPrimary_light">#FFCDD2</color>
+
+    <color name="amberPrimary">#FFC107</color>
+    <color name="amberPrimary_dark">#FFA000</color>
+    <color name="amberPrimary_light">#FFECB3</color>
+
+    <color name="greyPrimary">#9E9E9E</color>
+    <color name="greyPrimary_dark">#616161</color>
+    <color name="greyPrimary_light">#F5F5F5</color>
+
+    <color name="greyPrimary_light50">#fafafa</color>
+
+    <color name="yellowPrimary">#FFEB3B</color>
+    <color name="yellowPrimary_dark">#FBC02D</color>
+    <color name="yellowPrimary_light">#FFF9C4</color>
+
+    <color name="orangePrimary500">#ff9800</color>
+    <color name="orangePrimary700">#f57c00</color>
+
+    <color name="deepOrangePrimary500">#ff5722</color>
+    <color name="deepOrangePrimary700">#e64a19</color>
+
+    <color name="black_overlay">#66000000</color>
+</resources>
