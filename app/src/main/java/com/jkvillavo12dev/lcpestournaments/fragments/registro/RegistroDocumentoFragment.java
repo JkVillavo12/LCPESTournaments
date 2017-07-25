@@ -12,6 +12,7 @@ import android.widget.Spinner;
 import android.widget.TextView;
 
 import com.jkvillavo12dev.lcpestournaments.R;
+import com.jkvillavo12dev.lcpestournaments.utils.ActivityUtils;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -31,6 +32,10 @@ public class RegistroDocumentoFragment extends Fragment {
             instance = new RegistroDocumentoFragment();
         }
         return instance;
+    }
+
+    public static void destroyInstance() {
+        instance = null;
     }
 
     public RegistroDocumentoFragment() {
@@ -53,22 +58,8 @@ public class RegistroDocumentoFragment extends Fragment {
     public boolean validate() {
 
         int errores = 0;
-        if (spinnerTipoDocumento.getSelectedItemPosition() == 0) {
-            errores++;
-            textViewSpinnerError.setVisibility(View.VISIBLE);
-            textViewSpinnerError.setText(getString(R.string.common_campoNecesario));
-        } else {
-            textViewSpinnerError.setVisibility(View.GONE);
-        }
-
-        if ("".equalsIgnoreCase(editTextDocumento.getText().toString())) {
-            errores++;
-            textInputLayoutDocumento.setErrorEnabled(true);
-            textInputLayoutDocumento.setError(getString(R.string.common_campoNecesario));
-        } else {
-            textInputLayoutDocumento.setErrorEnabled(false);
-            textInputLayoutDocumento.setError(null);
-        }
+        errores += ActivityUtils.validarSpinnerWithTextView(getContext(), spinnerTipoDocumento, textViewSpinnerError);
+        errores += ActivityUtils.validarEditTextWithInputLayout(getContext(), editTextDocumento, textInputLayoutDocumento);
 
         if (errores > 0) {
             return false;

@@ -1,9 +1,9 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/mm"
-    android:gravity="center"
-    android:padding="@dimen/padding_horizontal_L"
-    tools:context="com.jkvillavo12dev.lcpestournaments.fragments.registro.RegistroDocumentoFragment">
+                xmlns:tools="http://schemas.android.com/tools"
+                style="@style/mm"
+                android:gravity="center"
+                android:padding="@dimen/padding_horizontal_L"
+                tools:context="com.jkvillavo12dev.lcpestournaments.fragments.registro.RegistroDocumentoFragment">
 
     <TextView
         android:id="@+id/registroDocumento_textView"
@@ -12,21 +12,21 @@
         android:layout_alignParentTop="true"
         android:layout_marginBottom="@dimen/margin_vertical_L"
         android:text="@string/registroDocumento"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+        android:textAppearance="@style/TextAppearance.AppCompat.Title"/>
 
     <TextView
         android:id="@+id/registroDocumento_textViewTipoDoc"
         style="@style/mw"
         android:layout_below="@id/registroDocumento_textView"
         android:layout_marginBottom="@dimen/margin_vertical_XS"
-        android:text="@string/registroDocumentoTipo" />
+        android:text="@string/registroDocumentoTipo"/>
 
     <Spinner
         android:id="@+id/registroDocumento_spinnerTipoDoc"
         style="@style/mw"
         android:layout_height="@dimen/viewHeihght_normal"
         android:layout_below="@+id/registroDocumento_textViewTipoDoc"
-        android:entries="@array/tipoDocumento" />
+        android:entries="@array/tipoDocumento"/>
 
     <TextView
         android:id="@+id/registroDocumento_textViewTipoDocError"
@@ -38,7 +38,7 @@
         android:text="Error"
         android:textAppearance="@style/TextAppearance.AppCompat.Caption"
         android:textColor="@color/redPrimary_dark"
-        android:visibility="gone" />
+        android:visibility="gone"/>
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/registroDocumento_textInputLayoutDocumento"
@@ -50,8 +50,8 @@
             style="@style/mw"
             android:hint="@string/registroDocumentoNum"
             android:inputType="number"
-            android:maxLength="50"
-            android:maxLines="1" />
+            android:maxLength="@integer/maxLenghtDocumento"
+            android:maxLines="1"/>
     </android.support.design.widget.TextInputLayout>
 
 

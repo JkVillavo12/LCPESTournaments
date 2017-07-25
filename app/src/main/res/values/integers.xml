@@ -2,6 +2,7 @@
 <resources>
 
     <integer name="maxLenghtName">50</integer>
+    <integer name="maxLenghtDocumento">10</integer>
 
     <integer name="duration1Sec">1000</integer>
 

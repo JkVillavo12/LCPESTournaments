@@ -8,11 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.Spinner;
-import android.widget.TextView;
 
 import com.jkvillavo12dev.lcpestournaments.R;
-import com.jkvillavo12dev.lcpestournaments.fragments.onboarding.InicialPage1Fragment;
+import com.jkvillavo12dev.lcpestournaments.utils.ActivityUtils;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -30,6 +28,10 @@ public class RegistroNombreFragment extends Fragment {
             instance = new RegistroNombreFragment();
         }
         return instance;
+    }
+
+    public static void destroyInstance() {
+        instance = null;
     }
 
 
@@ -56,23 +58,8 @@ public class RegistroNombreFragment extends Fragment {
 
         int errores = 0;
 
-        if ("".equalsIgnoreCase(editTextNombres.getText().toString())) {
-            errores++;
-            textInputLayoutNombres.setErrorEnabled(true);
-            textInputLayoutNombres.setError(getString(R.string.common_campoNecesario));
-        } else {
-            textInputLayoutNombres.setErrorEnabled(false);
-            textInputLayoutNombres.setError(null);
-        }
-
-        if ("".equalsIgnoreCase(editTextApellidos.getText().toString())) {
-            errores++;
-            textInputLayoutApellidos.setErrorEnabled(true);
-            textInputLayoutApellidos.setError(getString(R.string.common_campoNecesario));
-        } else {
-            textInputLayoutApellidos.setErrorEnabled(false);
-            textInputLayoutApellidos.setError(null);
-        }
+        errores += ActivityUtils.validarEditTextWithInputLayout(getContext(), editTextNombres, textInputLayoutNombres);
+        errores += ActivityUtils.validarEditTextWithInputLayout(getContext(), editTextApellidos, textInputLayoutApellidos);
 
         if (errores > 0) return false;
         return true;

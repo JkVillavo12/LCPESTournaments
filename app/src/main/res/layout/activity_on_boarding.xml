@@ -1,8 +1,8 @@
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    style="@style/mm"
-    android:background="@color/primary"
-    tools:context="com.jkvillavo12dev.lcpestournaments.OnBoardingActivity">
+             xmlns:tools="http://schemas.android.com/tools"
+             style="@style/mm"
+             android:background="@color/primary"
+             tools:context="com.jkvillavo12dev.lcpestournaments.OnBoardingActivity">
 
     <RelativeLayout style="@style/mm">
 
@@ -12,7 +12,7 @@
             android:layout_above="@+id/fullscreenInicio_linearLayout"
             android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true" />
+            android:layout_alignParentTop="true"/>
 
         <LinearLayout
             android:id="@+id/fullscreenInicio_linearLayout"
@@ -25,15 +25,6 @@
             android:text="Medium Text"
             android:textAppearance="?android:attr/textAppearanceMedium">
 
-            <ImageButton
-                style="@style/ww"
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:background="@null"
-                android:onClick="backFragment"
-                android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
-                android:tint="@android:color/white" />
-
             <Button
                 style="@style/ww"
                 android:layout_width="0dp"
@@ -41,7 +32,7 @@
                 android:background="@null"
                 android:text="@string/inicio_terminos"
                 android:textColor="@android:color/white"
-                android:visibility="invisible" />
+                android:visibility="invisible"/>
 
             <LinearLayout
                 style="@style/ww.hori"
@@ -55,25 +46,25 @@
                     android:id="@+id/activityInicio_imageViewFrag1"
                     style="@style/ww"
                     android:src="@drawable/ic_brightness_1_black_18dp"
-                    android:tint="@android:color/white" />
+                    android:tint="@android:color/white"/>
 
                 <ImageView
                     android:id="@+id/activityInicio_imageViewFrag2"
                     style="@style/ww"
                     android:src="@drawable/ic_brightness_1_black_18dp"
-                    android:tint="@color/primary_dark" />
+                    android:tint="@color/primary_dark"/>
 
                 <ImageView
                     android:id="@+id/activityInicio_imageViewFrag3"
                     style="@style/ww"
                     android:src="@drawable/ic_brightness_1_black_18dp"
-                    android:tint="@color/primary_dark" />
+                    android:tint="@color/primary_dark"/>
 
                 <ImageView
                     android:id="@+id/activityInicio_imageViewFrag4"
                     style="@style/ww"
                     android:src="@drawable/ic_brightness_1_black_18dp"
-                    android:tint="@color/primary_dark" />
+                    android:tint="@color/primary_dark"/>
 
             </LinearLayout>
 
@@ -84,17 +75,8 @@
                 android:background="@null"
                 android:onClick="ingresar"
                 android:text="@string/inicio_ingresar"
-                android:textColor="@android:color/white" />
+                android:textColor="@android:color/white"/>
 
-            <ImageButton
-                android:id="@+id/imageButton"
-                style="@style/ww"
-                android:layout_width="0dp"
-                android:layout_weight="2"
-                android:background="@null"
-                android:onClick="nextFragment"
-                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
-                android:tint="@android:color/white" />
 
         </LinearLayout>
 
@@ -105,7 +87,7 @@
             android:layout_above="@+id/fullscreenInicio_linearLayout"
             android:layout_alignParentEnd="true"
             android:layout_alignParentStart="true"
-            android:background="@android:color/white" />
+            android:background="@android:color/white"/>
     </RelativeLayout>
 
 

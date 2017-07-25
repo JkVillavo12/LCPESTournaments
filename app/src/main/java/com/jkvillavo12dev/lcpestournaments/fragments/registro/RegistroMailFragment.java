@@ -8,9 +8,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
-import android.widget.ImageView;
 
 import com.jkvillavo12dev.lcpestournaments.R;
+import com.jkvillavo12dev.lcpestournaments.utils.ActivityUtils;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -44,18 +44,18 @@ public class RegistroMailFragment extends Fragment {
         return view;
     }
 
+    public static void destroyInstance() {
+        instance = null;
+    }
+
     public boolean validate() {
 
-        if ("".equalsIgnoreCase(editTextMail.getText().toString())) {
-            textInputLayoutMail.setErrorEnabled(true);
-            textInputLayoutMail.setError(getString(R.string.common_campoNecesario));
-            return false;
-        } else {
-            textInputLayoutMail.setErrorEnabled(false);
-            textInputLayoutMail.setError(null);
+        int errores = ActivityUtils.validarEditTextWithInputLayout(getContext(), editTextMail, textInputLayoutMail);
+        if (errores == 0) {
+            errores += ActivityUtils.isValidEmail(getContext(), editTextMail, textInputLayoutMail);
         }
-
-        return true;
+        if (errores == 0) return true;
+        return false;
     }
 
 }

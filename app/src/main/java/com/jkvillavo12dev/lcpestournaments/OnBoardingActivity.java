@@ -145,18 +145,4 @@ public class OnBoardingActivity extends AppCompatActivity {
 
     }
 
-    public void nextFragment(View view) {
-        if (positionInViewFragmentAdapter < mSectionsPagerAdapter.getCount()) {
-            positionInViewFragmentAdapter++;
-            mViewPager.setCurrentItem(positionInViewFragmentAdapter);
-        }
-    }
-
-    public void backFragment(View view) {
-        if (positionInViewFragmentAdapter > 0) {
-            positionInViewFragmentAdapter--;
-            mViewPager.setCurrentItem(positionInViewFragmentAdapter);
-        }
-    }
-
 }

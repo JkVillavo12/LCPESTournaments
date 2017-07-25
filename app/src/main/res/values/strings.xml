@@ -10,10 +10,12 @@
     <string name="common_invitado">Invitado</string>
     <string name="common_next">Siguiente</string>
     <string name="common_back">Anterior</string>
+    <string name="common_finish">Finalizar</string>
     <string name="common_campoNecesario">Este campo es necesario.</string>
+    <string name="common_correoNoValido">No es un correo valido, "correo@text.algo".</string>
+    <string name="common_passwordNoValido">El password no cumple mínimo de caracteres (6).</string>
 
     <!--MENSAJES-->
-    <string name="msg_campoObligatorio">Campo obligatorio</string>
     <string name="msg_internetConsultandoInformacion">Consultando información</string>
     <string name="msg_logginIncorrect">Usuario o contraseña invalido, verifique su información por favor.</string>
 
@@ -72,7 +74,9 @@
     <string name="registroNickTexto">¿Usas un nick jugando a la PES? \n Indicanos tu nick.</string>
     <string name="registroNick">Nickname</string>
     <string name="registroPasswordText">Es necesario un password para ingresar a la app, vamos a ingresarlo.</string>
+    <string name="registroPasswordText2">Debe tener almenos 6 caracteres.</string>
     <string name="registroPassword">Password</string>
+    <string name="registroPassword_errorDistintos">Passwords ingresados no coinciden.</string>
     <string name="registroConfirmaPassword">Confirma password</string>
     <string name="registroFechaNacimiento">Fecha nacimiento</string>
     <string name="registroCiudad">Ciudad</string>
@@ -109,6 +113,9 @@
         <item>Cédula</item>
         <item>Tarjeta Identidad</item>
     </string-array>
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="action_settings">Settings</string>
 
 
 </resources>
