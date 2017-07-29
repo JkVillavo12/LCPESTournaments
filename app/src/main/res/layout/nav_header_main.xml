@@ -12,7 +12,7 @@
         android:id="@+id/mainActivity_header_imageViewPlayer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="centerCrop"
+        android:scaleType="fitXY"
         android:src="@drawable/mock_henry"/>
 
     <ImageView
@@ -31,33 +31,51 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/mainActivity_header_layoutNames"
         android:background="#80FFFFFF"
-        android:layout_alignTop="@+id/mainActivity_header_textViewNick"
         android:text=""/>
 
+    <LinearLayout
+        android:id="@+id/mainActivity_header_layoutNames"
+        style="@style/ww"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="@dimen/margin_horizontal_S"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="@dimen/padding_horizontal_XS">
+
+        <TextView
+            android:id="@+id/mainActivity_header_textViewNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Henry"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/mainActivity_header_textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thierry Henry"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="@color/primary_text"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/mainActivity_header_textViewName"
+        android:id="@+id/mainActivity_header_textViewNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="@dimen/margin_vertical_S"
-        android:layout_marginLeft="@dimen/margin_horizontal_S"
-        android:text="David Alejandro Pelaez"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
-        android:textColor="@color/primary_text"
-        android:textStyle="bold"/>
-
-    <TextView
-        android:id="@+id/mainActivity_header_textViewNick"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_above="@+id/mainActivity_header_textViewName"
-        android:layout_alignStart="@+id/mainActivity_header_textViewName"
-        android:text="Davalty"
-        android:textAppearance="@style/TextAppearance.AppCompat.Title"
-        android:textColor="@color/primary_text"
-        android:textStyle="bold"/>
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="@dimen/margin_horizontal_M"
+        android:gravity="center"
+        android:text="12"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
+        android:textColor="@color/primary_text"/>
 
 
 </RelativeLayout>
